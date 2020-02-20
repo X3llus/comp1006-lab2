@@ -16,10 +16,6 @@
 
     $valid = true;
 
-    if (empty($clubId)) {
-      $valid = false;
-      echo "Club Id not present";
-    }
     if (empty($clubName)){
       $valid = false;
       echo "Club name required";
@@ -32,17 +28,25 @@
     if ($valid) {
       $db = new PDO('mysql:host=172.31.22.43;dbname=Braden_W1095701', 'Braden_W1095701', 'P8TwvNsomx');
 
+      // make sql
+      if (empty($clubId)) {
+        $sql = "INSERT INTO clubs (clubName, ground) VALUES (:clubName, :ground)";
+      } else {
+        $sql = "UPDATE clubs SET clubName = :clubName, ground = :ground WHERE clubId = :clubId";
+      }
+
       // build and execute the sql query
-      $sql = "UPDATE clubs SET clubName = :clubName, ground = :ground WHERE clubId = :clubId";
       $cmd = $db->prepare($sql);
       $cmd->bindParam(':clubName', $clubName, PDO::PARAM_STR, 50);
       $cmd->bindParam(':ground', $ground, PDO::PARAM_STR, 50);
-      $cmd->bindParam(':clubId', $clubId, PDO::PARAM_INT);
+      if (!empty($clubId)) {
+        $cmd->bindParam(':clubId', $clubId, PDO::PARAM_INT);
+      }
       $cmd->execute();
 
       $db = null;
 
-      echo $clubName . " is updated.";
+      echo $clubName . " is saved.";
 
     }
 

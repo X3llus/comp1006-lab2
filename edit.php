@@ -1,6 +1,10 @@
 <?php
 
-$clubId = $_GET['clubId'];
+if (!empty($_GET['clubId'])) {
+  $clubId = $_GET['clubId'];
+} else {
+  $clubId = null;
+}
 
 if (!empty($clubId)) {
 

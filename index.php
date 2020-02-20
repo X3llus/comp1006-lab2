@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Clubs - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/master.css">
@@ -11,7 +11,7 @@
   <body>
     <header>
       <h1>Clubs</h1>
-      <a href="newClub.php">Add new club</a>
+      <a href="edit.php">Add new club</a>
     </header>
     <table class="table table-striped table-hover">
       <thead><th>Club</th><th>Ground</th><th></th></thead>

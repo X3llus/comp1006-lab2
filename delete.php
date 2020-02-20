@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Deleted</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
     <?php
@@ -28,7 +31,7 @@
     }
 
     ?>
-
+    <br>
     <a href="/labTwo/" class="btn btn-outline-success" role="button">Okay</a>
 
   </body>
