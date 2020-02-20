@@ -1,0 +1,17 @@
+header {
+  padding-left: 32px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+table {
+  font-family: 'Montserrat', sans-serif;
+}
+form {
+  padding: 32px;
+  width: 33%;
+  font-family: 'Montserrat', sans-serif;
+}
+fieldset {
+  display: flex;
+  justify-content: space-between;
+}
